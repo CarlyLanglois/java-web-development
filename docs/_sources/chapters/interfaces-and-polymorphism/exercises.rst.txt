@@ -12,7 +12,7 @@ To help overcome this, let's consider a common occurrence---sorting an
 #. If the list contains ``String`` or numerical entries, then sorting the list
    is :ref:`trivial <arraylist-methods>`:
 
-   .. sourcecode:: Java
+   .. sourcecode:: java
 
       Collections.sort(arrayListName);
 
@@ -51,7 +51,7 @@ Create a Sorting Class
 #. Create a new class called ``FlavorComparator`` and have it implement the
    ``Comparator`` interface:
 
-   .. sourcecode:: Java
+   .. sourcecode:: java
 
       public class FlavorComparator implements Comparator<Flavor>
 
@@ -67,7 +67,7 @@ Create a Sorting Class
    c. This adds an ``@Override`` method that compares two ``Flavor`` objects
       and *always* returns ``0``.
 
-      .. sourcecode:: Java
+      .. sourcecode:: java
          :lineno-start: 6
 
          @Override
@@ -77,7 +77,7 @@ Create a Sorting Class
 
 #. Always returning ``0`` results in no sorting, so replace line 8 with:
 
-   .. sourcecode:: Java
+   .. sourcecode:: java
 
       return o1.getName().compareTo(o2.getName());
 
@@ -87,42 +87,42 @@ Create a Sorting Class
 Sorting the ``flavors`` ArrayList
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In ``Main``, we declare ``allItems`` that contains everything in the ``Case``
+In ``Main``, we declare ``menu`` that contains everything in the ``Case``
 as well as specific ``flavors`` and ``cones`` collections.
 
-.. sourcecode:: Java
+.. sourcecode:: java
    :lineno-start: 6
 
    public static void main(String[] args){
-      Case allItems = new Case();
-      ArrayList<Flavor> flavors = allItems.getFlavors();
-      ArrayList<Cone> cones = allItems.getCones();
+      Case menu = new Case();
+      ArrayList<Flavor> flavors = menu.getFlavors();
+      ArrayList<Cone> cones = menu.getCones();
 
    }
 
 #. To sort the ``flavors`` list, first create a new ``FlavorComparator``
    object.
 
-   .. sourcecode:: Java
+   .. sourcecode:: java
       :lineno-start: 6
 
       public static void main(String[] args){
-         Case allItems = new Case();
-         ArrayList<Flavor> flavors = allItems.getFlavors();
-         ArrayList<Cone> cones = allItems.getCones();
+         Case menu = new Case();
+         ArrayList<Flavor> flavors = menu.getFlavors();
+         ArrayList<Cone> cones = menu.getCones();
          Comparator comparator = new FlavorComparator();
       }
 
 #. Next, call the ``sort`` method on ``flavors`` and pass the ``comparator``
    object as the argument.
 
-   .. sourcecode:: Java
+   .. sourcecode:: java
       :lineno-start: 6
 
       public static void main(String[] args){
-         Case allItems = new Case();
-         ArrayList<Flavor> flavors = allItems.getFlavors();
-         ArrayList<Cone> cones = allItems.getCones();
+         Case menu = new Case();
+         ArrayList<Flavor> flavors = menu.getFlavors();
+         ArrayList<Cone> cones = menu.getCones();
          Comparator comparator = new FlavorComparator();
 
          flavors.sort(comparator);
@@ -150,7 +150,7 @@ method.
    Instead of declaring and initializing the ``comparator`` object, we could
    combine steps 1 and 2 by using a single statement:
 
-   .. sourcecode:: Java
+   .. sourcecode:: java
 
       flavors.sort(new FlavorComparator());
 
