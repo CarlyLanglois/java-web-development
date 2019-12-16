@@ -13,10 +13,15 @@ Chapters
    chapters/unit-testing/index
    chapters/inheritance/index
    chapters/interfaces-and-polymorphism/index
+<<<<<<< HEAD
    chapters/spring-intro/index
    chapters/spring-controllers-and-routes/index
    chapters/thymeleaf-views/index
    chapters/sql-part1/index
+=======
+   chapters/spring/index
+
+>>>>>>> master
 
 .. toctree::
 
@@ -36,9 +41,13 @@ Studios
    chapters/unit-testing/studio
    chapters/inheritance/studio
    chapters/interfaces-and-polymorphism/studio
+<<<<<<< HEAD
    chapters/spring-controllers-and-routes/studio
    chapters/thymeleaf-views/studio
    chapters/sql-part1/studio
+=======
+   chapters/spring/studio
+>>>>>>> master
 
 Assignments
 -----------
@@ -59,11 +68,9 @@ Appendices
    :maxdepth: 1
    :name: appendicestoc
 
-   appendices/spring/thymeleaf
-   appendices/sql-install
-
 .. toctree::
    :hidden:
 
    todos
    glossary
+

@@ -150,8 +150,8 @@ then run each of the behaviors you and your partner identified.
    .. sourcecode:: Java
       :linenos:
 
-      myCd.spinDisc();
-      myDvd.spinDisc();
+      CD.spinDisc();
+      DVD.spinDisc();
 
    **Output**
 
