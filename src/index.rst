@@ -14,14 +14,17 @@ Chapters
    chapters/unit-testing/index
    chapters/inheritance/index
    chapters/interfaces-and-polymorphism/index
-   chapters/spring/index
+   chapters/spring-intro/index
+   chapters/spring-controllers-and-routes/index
+   chapters/thymeleaf-views/index
+   chapters/spring-model-classes/index
 
 .. toctree::
 
    genindex
 
 Studios
---------
+-------
 
 .. toctree::
    :maxdepth: 1
@@ -34,7 +37,9 @@ Studios
    chapters/unit-testing/studio
    chapters/inheritance/studio
    chapters/interfaces-and-polymorphism/studio
-   chapters/spring/studio
+   chapters/spring-controllers-and-routes/studio
+   chapters/thymeleaf-views/studio
+   chapters/spring-model-classes/studio
 
 Assignments
 ------------
@@ -54,6 +59,9 @@ Appendices
 .. toctree::
    :maxdepth: 1
    :name: appendicestoc
+
+   appendices/spring/thymeleaf
+   appendices/sql-install
 
 .. toctree::
    :hidden:
